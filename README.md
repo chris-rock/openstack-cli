@@ -5,9 +5,9 @@ I had some issues installing the python dependencies for OpenStack with pip on M
 ## Quick Start
 
 ```bash
-docker pull chrisrock/oscli
+docker pull chrisrock/openstack-cli
 # $(pwd)/config is the path where your openstackrc files are located
-docker run -it -v $(pwd)/config:/config oscli /bin/bash
+docker run -it -v $(pwd)/config:/config chrisrock/openstack-cli /bin/bash
 # source the config file
 $ source /config/example.rc
 ```
